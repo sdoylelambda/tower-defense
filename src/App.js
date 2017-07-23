@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import Board from './components/board'
-import GameLoop from './components/game-loop'
+import Board from './components/board/component'
+import GameLoop from './components/game-loop/component'
 
-import initialBoardState from './maps/0001.js'
+import tileMapState from './maps/0001.js'
 
 import { Provider } from 'react-redux'
 import Store from './store'
 const StoreInstance = Store({
-  board: initialBoardState,
+  board: { tiles: tileMapState, },
 })
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Provider store={StoreInstance}>
         <GameLoop>
-          <Board />
+          <Board tiles={tileMapState} cellSize={33}/>
         </GameLoop>
       </Provider>
     )

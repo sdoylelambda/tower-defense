@@ -1,0 +1,1 @@
+export const MARK_UNAVAILABLE = 'MARK_UNAVAILABLE'

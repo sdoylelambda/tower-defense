@@ -1,4 +1,4 @@
-import { DEBIT_WALLET, CREDIT_WALLET, INITIAL_AMOUNT_GIVEN } from '../consts'
+import { DEBIT_WALLET, CREDIT_WALLET, INITIAL_AMOUNT_GIVEN } from './consts'
 
 const initialState = {
   balance: 0,

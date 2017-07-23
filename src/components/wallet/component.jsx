@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import * as walletActions from '../actions/wallet'
+import * as walletActions from './actions'
 
 class Wallet extends Component {
 
@@ -23,8 +23,6 @@ class Wallet extends Component {
       borderRadius: '10px',
       padding: '10px 20px',
     }
-
-    console.log(wallet.balance)
 
     return (
       <div style={style}>

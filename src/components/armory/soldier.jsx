@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import imgDisabled from './soldier-disabled.png'
-import img from './soldier.png'
+import imgDisabled from './images/soldier-disabled.png'
+import img from './images/soldier.png'
 
 import Price from './price'
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import availablePlace from './available-place.png'
-import roadPiece from './road-piece.png'
+import availablePlace from '../images/available-place.png'
+import roadPiece from '../images/road-piece.png'
 
 const AVAILABLE_PLACE = 1
 const ROAD_PIECE = 5
@@ -25,7 +25,7 @@ class CellImage extends Component {
   render() {
     return (
       this.imageSrc()
-      ? <img style={this.style()} src={this.imageSrc()} />
+      ? <img onClick={this.props.handleCellClick} style={this.style()} src={this.imageSrc()} />
       : null
     )
   }
